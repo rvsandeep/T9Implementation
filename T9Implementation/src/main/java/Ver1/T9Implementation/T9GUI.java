@@ -40,7 +40,7 @@ public class T9GUI extends JFrame {
 	private JButton button_;
 	private JButton _button;
 
-	// Digit Sequence is the sequence of digits pressed by
+	// Digit Sequence is the sequence of digits pressed by user
 	StringBuilder digitSequence = new StringBuilder("");
 	int preferenceCount = 1;
 	String currentString = "";
