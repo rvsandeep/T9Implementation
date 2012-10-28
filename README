@@ -46,7 +46,7 @@ How to implement?
    good => 4663
 2. Map the digits to a Priority queue(Heap) with frequent word used as the highest priority.
 3. Input digit sequence is used to get the word at the root of the tree. 
-This solves only the case 1 where a known sequence is entered.
+   This solves only the case 1 where a known sequence is entered.
 
 To implement case 2.
 I can use a prefix tree (Trie) for all words in dictionary.
@@ -59,8 +59,7 @@ T9GUI
 The interface for T9 consists of mobile like text area and 12 buttons (0-9,*,#).
 
 on pressing the buttons the corresponding letter should come on the text area.
-On pressing 0,word corresponding to the previous new sequence should be appended to the previous message
-and space should be provided.
+On pressing 0,word corresponding to the previous new sequence should be appended to the previous message and space should be provided.
 On pressing * the next word corresponding to the sequence should be provided as an option.
 
 [DONE]
@@ -73,20 +72,18 @@ A Simple looking and a working one.
 
 How to Use?
 Run the GUI.
-Use it just like the normal mobile keypad.
+Use it just like the normal mobile keypad for typing words.
 Press 0 for space * for other words.
 
 What could go wrong?
-If an sequence is provided which is not present in the dictionary and is not the prefix of any other sequence
-in the dictionary, then exception is thrown. GUI stops working. Rerun to use.
+If an sequence is provided which is not present in the dictionary and is not the prefix of any other sequence in the dictionary, then exception is thrown. GUI stops working. Rerun to use.
 
 [TODO] 
 
-1.  Right now im using the frequency count as the number of occurances of the word in the dictionary. It should be
-    changed to number of times it is used by the user.
+1.  Right now im using the frequency count as the number of occurances of the word in the dictionary. It should be changed to number of times it is used by the user.
 2.  Word Prediction/Completion to be Implemented
 3.  Option to add words to the dicitionary (Dynamic Dictionary).
     This will also solve our problem of GUI crashing when sequence is not present and is not prefix of any other words in the dict.
 4.  Interface can be improved to provide edit option.
 5.  Capital cases can be provided.
-6. Try to underline the word being added
+6.  Try to underline the word being added
