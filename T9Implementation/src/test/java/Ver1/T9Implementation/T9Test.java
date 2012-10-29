@@ -4,6 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+
 /**
  * Unit test for T9
  */
@@ -42,7 +43,6 @@ public class T9Test extends TestCase {
 	
 	public void testinsert() {
 		
-
 		T9.insert("4663", "good");
 		T9.insert("4663", "gone");
 		T9.insert("12", "go");
