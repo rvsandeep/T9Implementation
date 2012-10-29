@@ -57,6 +57,7 @@ public class T9 {
 	/**
 	 * @param query
 	 * @return
+	 * @throws SequenceNotFoundException
 	 *             converts the digit sequence input by the user into words and
 	 *             returns it
 	 */
@@ -168,14 +169,23 @@ public class T9 {
 	 */
 	public static void insert(String sequence, String word) {
 		if (T9dictionary.containsKey(sequence)) {
+
 			Queue<Word> wordQueue = T9dictionary.get(sequence);
+			// System.out.println(wordQueue.contains(new Word(word)));
 			if (wordQueue.contains(new Word(word))) {
+				// System.out.println("Before adding: "+ wordQueue + " "+word);
 				Word toUpdate = removeWord(wordQueue, new Word(word));
+				// System.out.println("Removed Word: "+toUpdate +
+				// " from : "+wordQueue);
 				toUpdate.setFrequency(toUpdate.getFrequency() + 1);
 				wordQueue.add(toUpdate);
+				// System.out.println("After adding: "+ wordQueue + " "+word);
 			} else {
+				// System.out.println("Before adding: "+ wordQueue + " "+word);
 				Word ne = new Word(word);
 				wordQueue.add(ne);
+				// System.out.println("After adding: "+ wordQueue);
+
 			}
 		} else {
 			Queue<Word> wordQueue = new PriorityQueue<Word>(1,
