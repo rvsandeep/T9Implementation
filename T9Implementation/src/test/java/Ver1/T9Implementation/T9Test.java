@@ -5,12 +5,10 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test for T9
  */
 public class T9Test extends TestCase {
 	/**
-	 * Create the test case
-	 * 
 	 * @param testName
 	 *            name of the test case
 	 */
