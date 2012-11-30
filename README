@@ -80,7 +80,7 @@ If an sequence is provided which is not present in the dictionary and is not the
 
 [TODO] 
 
-1.  Right now im using the frequency count as the number of occurances of the word in the dictionary (Just to have the same experience). It should be changed to number of times it is used by the user.
+1.  Right now im using the frequency count as the number of occurances of the word in the dictionary (Just to have the same experience when using mobile). It should be changed to number of times it is used by the user.
 2.  Word Prediction/Completion to be Implemented.
 3.  Option to add words to the dicitionary (Dynamic Dictionary).
     This will also solve our problem of GUI crashing when sequence is not present and is not prefix of any other words in the dict.
